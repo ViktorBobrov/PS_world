@@ -471,6 +471,7 @@ nav {
   bottom: 405px;
   right: 135px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_left_stick {
   width: 14px;
@@ -487,6 +488,7 @@ nav {
   position: relative;
   bottom: 325px;
   right: 160px;
+  z-index: 3;
 }
 .dot_directional_pad {
   width: 14px;
@@ -503,6 +505,7 @@ nav {
   position: relative;
   bottom: 235px;
   right: 117px;
+  z-index: 3;
 }
 .dot_view_button {
   width: 14px;
@@ -519,6 +522,7 @@ nav {
   bottom: 353px;
   right: 46px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_share_button {
   width: 14px;
@@ -535,6 +539,7 @@ nav {
   right: 3px;
   border-radius: 50%;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_right_bumper {
   width: 14px;
@@ -551,6 +556,7 @@ nav {
   border-radius: 50%;
   transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_menu_button {
   width: 14px;
@@ -566,6 +572,7 @@ nav {
   left: 42px;
   border-radius: 50%;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
   transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
 }
 .dot_y_button {
@@ -583,6 +590,7 @@ nav {
   position: relative;
   bottom: 450px;
   left: 155px;
+  z-index: 3;
 }
 .dot_b_button {
   width: 14px;
@@ -599,6 +607,7 @@ nav {
   bottom: 425px;
   left: 190px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_x_button {
   width: 14px;
@@ -615,6 +624,7 @@ nav {
   bottom: 420px;
   left: 120px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_a_button {
   width: 14px;
@@ -631,6 +641,7 @@ nav {
   bottom: 395px;
   left: 155px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .dot_right_stick {
   width: 14px;
@@ -647,6 +658,7 @@ nav {
   bottom: 350px;
   left: 70px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
+  z-index: 3;
 }
 .arrow_buttons_guideline {
   display: flex;
@@ -654,16 +666,286 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  position: relative;
+  bottom: 250px;
+}
+/* палки*/
+.left_bumper_dash_1 {
+  width: 70.71px;
+  height: 3px;
+  transform: rotate(-135deg);
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 590px;
+  right: 155px;
+  z-index: 2;
+}
+.left_bumper_dash_2 {
+  width: 122px;
+  height: 3px;
+  transform: rotate(-180deg);
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  z-index: 1;
+  bottom: 618px;
+  right: 239.5px;
+}
+.right_bumper_dash_1 {
+  width: 70.71px;
+  height: 3px;
+  border-radius: 5px;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  background: #8a70da;
+  z-index: 2;
+  position: relative;
+  bottom: 601px;
+  left: 140px;
+}
+.right_bumper_dash_2 {
+  width: 122px;
+  height: 3px;
+  transform: rotate(-180deg);
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 628px;
+  left: 225px;
+}
+.left_stick_dash_1 {
+  width: 161px;
+  height: 3px;
+  transform: rotate(-135deg);
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 544px;
+  right: 220px;
+}
+.left_stick_dash_2 {
+  width: 122px;
+  height: 3px;
+  transform: rotate(-180deg);
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 603px;
+  right: 337px;
+}
+.menu_dash_1 {
+  width: 161px;
+  height: 3px;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 550px;
+  left: 101px;
+}
+.menu_dash_2 {
+  width: 122px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 610px;
+  left: 218px;
+}
+.y_dash_1 {
+  width: 70.71px;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 564px;
+  left: 180px;
+}
+.y_dash_2 {
+  width: 122px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 591px;
+  left: 265px;
+}
+.b_dash_1 {
+  width: 70.71px;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 536px;
+  left: 220px;
+}
+.b_dash_2 {
+  width: 122px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 564px;
+  left: 304px;
+}
+.d-pad_dash {
+  width: 190px;
+  transform: rotate(180deg);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 405px;
+  right: 217px;
+}
+.right_stick_dash {
+  width: 100px;
+  transform: rotate(90deg);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 340px;
+  left: 70px;
+}
+.view_bottom_dash {
+  transform: rotate(-90deg);
+  width: 150px;
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 597px;
+  right: 46px;
+}
+
+.share_button_dash {
+  width: 150px;
+  transform: rotate(-90deg);
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 568px;
+  right: 3px;
+}
+.x_button_dash {
+  width: 205px;
+
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 505px;
+  left: 230px;
+}
+.a_button_dash {
+  width: 205px;
+  height: 3px;
+  border-radius: 5px;
+  background: #8a70da;
+  position: relative;
+  bottom: 470px;
+  left: 260px;
+}
+/* здесь параграффы  для кнопок*/
+.giudeline_par {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.par_wrapper_left_bumper {
+  position: relative;
+  bottom: 680px;
+  right: 345px;
+}
+.par_wrapper_view_button {
+  position: relative;
+  bottom: 720px;
+  right: 45px;
+}
+.par_wrapper_share_button {
+  position: relative;
+  bottom: 708px;
+  left: 22px;
+}
+.par_wrapper_right_bumper {
+  position: relative;
+  bottom: 735px;
+  left: 335px;
+}
+.par_wrapper_menu_button {
+  position: relative;
+  bottom: 720px;
+  left: 325px;
+}
+.par_wrapper_y_button {
+  position: relative;
+  bottom: 712px;
+  left: 360px;
+}
+.par_wrapper_b_button {
+  position: relative;
+  bottom: 696px;
+  left: 398px;
+}
+.par_wrapper_x_button {
+  position: relative;
+  bottom: 638px;
+  left: 365px;
+}
+.par_wrapper_a_button {
+  position: relative;
+  bottom: 618px;
+  left: 394px;
+}
+.par_wrapper_right_stick {
+  position: relative;
+  bottom: 450px;
+  left: 68px;
+}
+.par_wrapper_d-pad {
+  position: relative;
+  bottom: 601px;
+  right: 392px;
+}
+.par_wrapper_left_stick {
+  position: relative;
+  bottom: 837px;
+  right: 430px;
 }
 /* xbox series x*/
-.x-wrapper {
+.wrapper_division {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-
+}
+.x-wrapper {
+  position: relative;
+}
+.wrapper_inside_text {
+  width: 996px;
+  height: 640px;
   border-radius: 63px;
+  border: 10px solid;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 82px;
+  padding-right: 82px;
 }
 .x_header {
   font-family: "Raleway";
@@ -671,7 +953,6 @@ nav {
   font-weight: 900;
   font-size: 70px;
   line-height: 82px;
-  width: 508px;
 
   color: #eeeeee;
 }
@@ -689,15 +970,7 @@ nav {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-
-  color: #ffffff;
-}
-.xpar_2 {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  margin-bottom: 20px;
 
   color: #ffffff;
 }
@@ -709,6 +982,64 @@ nav {
   line-height: 24px;
   color: #ffffff;
 }
+.x_dash {
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  background: #a394d2;
+}
+.x_list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+.box_and_gamepad {
+  position: relative;
+}
+.text-x {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.x_box_buy_button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25.6158px;
+  line-height: 30px;
+  font-variant: all-small-caps;
+  color: #ffffff;
+  background: radial-gradient(
+    100% 626.68% at 0% 0%,
+    rgba(30, 19, 65, 0.6) 0%,
+    rgba(57, 30, 138, 0.6) 49.19%,
+    rgba(119, 94, 197, 0.6) 94.27%
+  );
+  border-radius: 32.0197px;
+  padding: 14px 74px;
+  border: none;
+}
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 91px;
+}
+.box_and_gamepad {
+  z-index: 2;
+  position: absolute;
+  top: 115px;
+  left: 100px;
+}
+.x_joystick {
+  position: absolute;
+  left: 1100px;
+  top: 2750px;
+  z-index: 2;
+}
+
+/*footer*/
 .wrapper_footer {
   display: flex;
   flex-direction: row;
@@ -760,10 +1091,55 @@ nav {
   justify-content: center;
   gap: 25px;
 }
-.text-x {
-  width: 996px;
-  height: 639px;
-  border-radius: 63px;
-  border-color: #c9bcf1;
-  border-style: solid;
+/*стили относящиеся к разделительной кнопке*/
+.delimter_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  gap: 20px;
+}
+.line_before {
+  height: 3px;
+  width: 556px;
+  background: radial-gradient(
+    100% 626.68% at 0% 0%,
+    rgba(30, 19, 65, 0.6) 0%,
+    rgba(57, 30, 138, 0.6) 49.19%,
+    rgba(119, 94, 197, 0.6) 94.27%
+  );
+  box-shadow: 1px 1px 10px 2px rgb(119 94 197 / 42%),
+    1px 1px 5px 2px rgb(119 94 197 / 42%);
+}
+.line_after {
+  height: 3px;
+  width: 556px;
+  background: radial-gradient(
+    100% 626.68% at 0% 0%,
+    rgba(30, 19, 65, 0.6) 0%,
+    rgba(57, 30, 138, 0.6) 49.19%,
+    rgba(119, 94, 197, 0.6) 94.27%
+  );
+  box-shadow: 1px 1px 10px 2px rgb(119 94 197 / 42%),
+    1px 1px 5px 2px rgb(119 94 197 / 42%);
+}
+
+.delimiter_button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  color: white;
+  width: 284px;
+  height: 62px;
+  background: radial-gradient(
+    100% 626.68% at 0% 0%,
+    rgba(30, 19, 65, 0.6) 0%,
+    rgba(57, 30, 138, 0.6) 49.19%,
+    rgba(119, 94, 197, 0.6) 94.27%
+  );
+  border-radius: 25px;
+  border: none;
 }
