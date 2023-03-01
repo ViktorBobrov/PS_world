@@ -125,6 +125,7 @@ nav {
   font-size: 20px;
   line-height: 23px;
   font-variant: all-small-caps;
+  box-shadow: -150px 100px 70px 100px rgba(118, 98, 177, 0.137);
 
   color: #ffffff;
   background: radial-gradient(
@@ -181,13 +182,17 @@ nav {
   position: relative;
   top: 90.1px;
   left: 345px;
+  box-shadow: 170px 170px 275px 50px rgba(155, 127, 241, 0.4),
+    170px 170px 275px 50px rgba(180, 159, 243, 0.4);
 }
+
 .main_gamepad {
   z-index: 1;
   position: relative;
   bottom: 170px;
   right: 50px;
 }
+
 .first_dote {
   width: 10px;
   height: 10px;
@@ -398,6 +403,7 @@ nav {
   position: relative;
   z-index: 1;
   left: 200px;
+  box-shadow: 200px 20px 200px 100px rgba(155, 127, 241, 0.208);
 }
 .quality_gamepad {
   position: relative;
@@ -448,13 +454,26 @@ nav {
   margin-bottom: 134px;
   color: #eeeeee;
 }
+.gueideline_gamepad {
+  z-index: 2;
+}
 .gueideline_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.gamepad_shadow {
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  color: green;
+  position: relative;
+  bottom: 700px;
+  left: 700px;
+  box-shadow: 0.1px 0.1px 300px 200px rgba(120, 94, 197, 0.187);
+  border-radius: 50%;
+}
 /*точки*/
 .dot_left_bumper {
   width: 14px;
@@ -471,7 +490,7 @@ nav {
   bottom: 405px;
   right: 135px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_left_stick {
   width: 14px;
@@ -488,7 +507,7 @@ nav {
   position: relative;
   bottom: 325px;
   right: 160px;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_directional_pad {
   width: 14px;
@@ -505,7 +524,7 @@ nav {
   position: relative;
   bottom: 235px;
   right: 117px;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_view_button {
   width: 14px;
@@ -522,7 +541,7 @@ nav {
   bottom: 353px;
   right: 46px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_share_button {
   width: 14px;
@@ -539,7 +558,7 @@ nav {
   right: 3px;
   border-radius: 50%;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_right_bumper {
   width: 14px;
@@ -556,7 +575,7 @@ nav {
   border-radius: 50%;
   transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_menu_button {
   width: 14px;
@@ -572,7 +591,7 @@ nav {
   left: 42px;
   border-radius: 50%;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
   transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
 }
 .dot_y_button {
@@ -590,7 +609,7 @@ nav {
   position: relative;
   bottom: 450px;
   left: 155px;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_b_button {
   width: 14px;
@@ -607,7 +626,7 @@ nav {
   bottom: 425px;
   left: 190px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_x_button {
   width: 14px;
@@ -624,7 +643,7 @@ nav {
   bottom: 420px;
   left: 120px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_a_button {
   width: 14px;
@@ -641,7 +660,7 @@ nav {
   bottom: 395px;
   left: 155px;
   box-shadow: 0.1px 0.1px 32px 5px #8a70da, 0.1px 0.1px 25px 8px #8a70da;
-  z-index: 3;
+  z-index: 4;
 }
 .dot_right_stick {
   width: 14px;
@@ -680,7 +699,7 @@ nav {
   position: relative;
   bottom: 590px;
   right: 155px;
-  z-index: 2;
+  z-index: 3;
 }
 .left_bumper_dash_2 {
   width: 122px;
@@ -689,7 +708,7 @@ nav {
   border-radius: 5px;
   background: #8a70da;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   bottom: 618px;
   right: 239.5px;
 }
@@ -699,7 +718,7 @@ nav {
   border-radius: 5px;
   transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
   background: #8a70da;
-  z-index: 2;
+  z-index: 3;
   position: relative;
   bottom: 601px;
   left: 140px;
@@ -713,6 +732,7 @@ nav {
   position: relative;
   bottom: 628px;
   left: 225px;
+  z-index: 3;
 }
 .left_stick_dash_1 {
   width: 161px;
@@ -723,6 +743,7 @@ nav {
   position: relative;
   bottom: 544px;
   right: 220px;
+  z-index: 3;
 }
 .left_stick_dash_2 {
   width: 122px;
@@ -733,6 +754,7 @@ nav {
   position: relative;
   bottom: 603px;
   right: 337px;
+  z-index: 3;
 }
 .menu_dash_1 {
   width: 161px;
@@ -743,6 +765,7 @@ nav {
   position: relative;
   bottom: 550px;
   left: 101px;
+  z-index: 3;
 }
 .menu_dash_2 {
   width: 122px;
@@ -753,6 +776,7 @@ nav {
   position: relative;
   bottom: 610px;
   left: 218px;
+  z-index: 3;
 }
 .y_dash_1 {
   width: 70.71px;
@@ -763,6 +787,7 @@ nav {
   position: relative;
   bottom: 564px;
   left: 180px;
+  z-index: 3;
 }
 .y_dash_2 {
   width: 122px;
@@ -773,6 +798,7 @@ nav {
   position: relative;
   bottom: 591px;
   left: 265px;
+  z-index: 3;
 }
 .b_dash_1 {
   width: 70.71px;
@@ -783,6 +809,7 @@ nav {
   position: relative;
   bottom: 536px;
   left: 220px;
+  z-index: 3;
 }
 .b_dash_2 {
   width: 122px;
@@ -793,6 +820,7 @@ nav {
   position: relative;
   bottom: 564px;
   left: 304px;
+  z-index: 3;
 }
 .d-pad_dash {
   width: 190px;
@@ -803,6 +831,7 @@ nav {
   position: relative;
   bottom: 405px;
   right: 217px;
+  z-index: 3;
 }
 .right_stick_dash {
   width: 100px;
@@ -813,6 +842,7 @@ nav {
   position: relative;
   bottom: 340px;
   left: 70px;
+  z-index: 3;
 }
 .view_bottom_dash {
   transform: rotate(-90deg);
@@ -823,6 +853,7 @@ nav {
   position: relative;
   bottom: 597px;
   right: 46px;
+  z-index: 3;
 }
 
 .share_button_dash {
@@ -834,10 +865,11 @@ nav {
   position: relative;
   bottom: 568px;
   right: 3px;
+  z-index: 3;
 }
 .x_button_dash {
   width: 205px;
-
+  z-index: 3;
   height: 3px;
   border-radius: 5px;
   background: #8a70da;
@@ -853,6 +885,7 @@ nav {
   position: relative;
   bottom: 470px;
   left: 260px;
+  z-index: 3;
 }
 /* здесь параграффы  для кнопок*/
 .giudeline_par {
@@ -939,8 +972,6 @@ nav {
 .wrapper_inside_text {
   width: 996px;
   height: 640px;
-  border-radius: 63px;
-  border: 10px solid;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -985,7 +1016,7 @@ nav {
 .x_dash {
   width: 40px;
   height: 4px;
-  border-radius: 5px;
+
   background: #a394d2;
 }
 .x_list {
@@ -1028,17 +1059,35 @@ nav {
 }
 .box_and_gamepad {
   z-index: 2;
-  position: absolute;
-  top: 115px;
-  left: 100px;
+  position: relative;
+  top: 700px;
+  left: 120px;
 }
 .x_joystick {
-  position: absolute;
+  position: relative;
   left: 1100px;
-  top: 2750px;
+  bottom: 400px;
+
   z-index: 2;
 }
-
+.left_shadow {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 600px;
+  left: 300px;
+  box-shadow: 1px 1px 300px 200px rgba(160, 134, 238, 0.122);
+}
+.right_shadow {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 300px 200px rgba(160, 134, 238, 0.126);
+  left: 1200px;
+  bottom: 800px;
+}
 /*footer*/
 .wrapper_footer {
   display: flex;
