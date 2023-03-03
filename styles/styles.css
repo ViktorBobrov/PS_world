@@ -54,9 +54,11 @@ nav {
   flex: none;
   order: 0;
   flex-grow: 0;
+  cursor: pointer;
 }
 .img_header {
   margin-right: 25px;
+  cursor: pointer;
 }
 .header_but {
   font-family: "Raleway";
@@ -64,6 +66,7 @@ nav {
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
+  cursor: pointer;
 
   color: #ffffff;
   background: radial-gradient(
@@ -137,6 +140,7 @@ nav {
   border-radius: 25px;
   border: none;
   padding: 11px 58px;
+  cursor: pointer;
 }
 .arrow {
   width: 45px;
@@ -151,6 +155,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .wrapper_par {
@@ -210,6 +215,7 @@ nav {
   left: 50px;
   box-shadow: 1px 1px 5px 5px rgba(119, 94, 197, 0.42),
     1px 1px 7px 7px rgba(119, 94, 197, 0.42);
+  cursor: pointer;
 }
 .second_dote {
   background: radial-gradient(
@@ -296,6 +302,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .white_dote {
   width: 8px;
@@ -303,6 +310,7 @@ nav {
   border-radius: 50%;
   background: #eeeeee;
   opacity: 0.6;
+  cursor: pointer;
 }
 .purple_dote {
   width: 10px;
@@ -314,6 +322,7 @@ nav {
     rgba(57, 30, 138, 0.6) 49.19%,
     rgba(119, 94, 197, 0.6) 94.27%
   );
+  cursor: pointer;
 }
 .right_arrow {
   width: 31px;
@@ -336,9 +345,11 @@ nav {
   align-items: center;
   width: 173px;
   margin: 0 auto;
+  cursor: pointer;
 }
 .left_arrov {
   transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .quality_wrapper {
@@ -960,34 +971,27 @@ nav {
   right: 430px;
 }
 /* xbox series x*/
-.wrapper_division {
+.x-box_wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  align-items: center;
 }
-.x-wrapper {
-  position: relative;
-}
-.wrapper_inside_text {
-  width: 996px;
-  height: 640px;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  gap: 82px;
-  padding-right: 82px;
-}
-.x_header {
+.inside_header {
+  width: 508px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 900;
   font-size: 70px;
   line-height: 82px;
-
   color: #eeeeee;
 }
-.x_header_stand {
+.inside_span {
+  background: -webkit-linear-gradient(#eee, #49198083);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inside_header-small {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -995,17 +999,16 @@ nav {
   line-height: 32px;
   color: #ffffff;
 }
-.x_par-1 {
+.inside_par {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 20px;
 
   color: #ffffff;
 }
-.x_dash_par {
+.inside_item-text {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -1013,34 +1016,66 @@ nav {
   line-height: 24px;
   color: #ffffff;
 }
-.x_dash {
+.inside_dash {
   width: 40px;
   height: 4px;
-
-  background: #a394d2;
-}
-.x_list {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background: #8a70da;
+  box-shadow: 1px 1px 20px 10px rgba(180, 159, 243, 0.4);
   gap: 20px;
 }
-.box_and_gamepad {
-  position: relative;
+.inside_item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.text-x {
+.inside_column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: right;
+  align-items: left;
+  gap: 30px;
+  width: 308px;
 }
-.x_box_buy_button {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25.6158px;
-  line-height: 30px;
-  font-variant: all-small-caps;
-  color: #ffffff;
+.text_border {
+  flex-grow: 2;
+  border-radius: 30px;
+  width: 1010px;
+  height: 640px;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(209, 204, 226, 0.939),
+    rgba(67, 37, 149, 0.772),
+    rgba(66, 22, 129, 0.542),
+    rgba(232, 226, 248, 0.939),
+    rgba(84, 38, 147, 0.501),
+    rgba(84, 38, 147, 0.701)
+  );
+  padding: 4px;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 636px;
+  padding-left: 83px;
+  background: #1f114a;
+  border-radius: 30px;
+}
+.wrapper_button_inside_text {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.inside_button {
+  color: whitesmoke;
   background: radial-gradient(
     100% 626.68% at 0% 0%,
     rgba(30, 19, 65, 0.6) 0%,
@@ -1048,45 +1083,52 @@ nav {
     rgba(119, 94, 197, 0.6) 94.27%
   );
   border-radius: 32.0197px;
-  padding: 14px 74px;
+  padding: 13px 74px;
+  text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
-.button_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 91px;
+.gamepad_x-box {
+  width: 100px;
+  z-index: 2;
 }
 .box_and_gamepad {
-  z-index: 2;
-  position: relative;
-  top: 700px;
-  left: 120px;
-}
-.x_joystick {
-  position: relative;
-  left: 1100px;
-  bottom: 400px;
-
+  width: 200px;
   z-index: 2;
 }
 .left_shadow {
-  position: relative;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 300px;
+  box-shadow: 1px 1px 150px 100px rgba(165, 147, 218, 0.4);
   border-radius: 50%;
-  bottom: 600px;
-  left: 300px;
-  box-shadow: 1px 1px 300px 200px rgba(160, 134, 238, 0.122);
+  position: relative;
+  z-index: 1;
+  top: 100px;
+  left: 350px;
 }
 .right_shadow {
-  position: relative;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 200px 200px rgba(165, 147, 218, 0.4);
   border-radius: 50%;
-  box-shadow: 1px 1px 300px 200px rgba(160, 134, 238, 0.126);
-  left: 1200px;
-  bottom: 800px;
+  position: relative;
+  z-index: 1;
+  right: 200px;
+}
+.xbox_img_left {
+  position: relative;
+  z-index: 2;
+  top: 110px;
+}
+.xbox_img_right {
+  z-index: 2;
+  position: relative;
+  top: 50px;
+  right: 250px;
+}
+.xbox_series_x {
+  width: 1500px;
+  height: 719px;
 }
 /*footer*/
 .wrapper_footer {
@@ -1103,6 +1145,7 @@ nav {
   line-height: 24px;
   color: #ffffff;
   list-style-type: none;
+  cursor: pointer;
 }
 .footer_item {
   font-family: "Lato";
@@ -1112,6 +1155,7 @@ nav {
   line-height: 19px;
   color: #ffffff;
   list-style-type: none;
+  cursor: pointer;
 }
 .wrapper_sotial {
   display: flex;
@@ -1139,6 +1183,9 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 25px;
+}
+.sotial_dot {
+  cursor: pointer;
 }
 /*стили относящиеся к разделительной кнопке*/
 .delimter_wrapper {
